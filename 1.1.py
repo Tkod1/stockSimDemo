@@ -1,3 +1,8 @@
+# stock symbols
+class StockSymbol:
+    stockName = str()
+    currentStrikePrice = float()
+    volatility = float()
 
 print('Hello Welcome to Stock Simulator.')
 print('what is your name?')
@@ -10,3 +15,5 @@ accountAmount = 300
 print(userName + ' You will start with an account amount of $300.00.')
 print('To simulate one day hit (d) + enter) for two days (dd), three (ddd).')
 userDaySkip = input()
+
+# volatility engine

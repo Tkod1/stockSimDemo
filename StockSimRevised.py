@@ -2,15 +2,18 @@ import random
 
 
 # Symbol creation
+def symbol():
+    letterList = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p]
+    
 
-# (Symbol) one day calculation based on 8 hours.
 
 def day():
     #when game is started full function is rand but when day two happens starting total needs to be skipped and replaced with current account.
     startingAccountTotal = float(300)
-    randomDailyMultiplyer = num.rand(1-7)
-    #random addition or subtraction needs to take place to the account 
-    fullTradetime = float(6)
-    dailyMultiplicationFunction = utility.math.multiplication
+    randomDailyMultiplyer = random.randint(1,9)
+    fullTradetime = float(8)
+    dailyAccountMovement = startingAccountTotal + randomDailyMultiplyer * fullTradetime
+    print(dailyAccountMovement)
 
-    todaysTotal = startingAccountTotal * randomDailyMultiplier 
+
+day() 
